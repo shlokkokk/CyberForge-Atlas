@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyber-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39ff14" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Hex Shield -->
+  <path d="M256 40 L450 140 V372 L256 472 L62 372 V140 L256 40Z" 
+        stroke="url(#cyber-grad)" stroke-width="24" stroke-linejoin="round" fill="rgba(8,8,16,0.8)" />
+  
+  <!-- Anvil / Hammer (Mathematically Centered) -->
+  <g transform="translate(0, 6)">
+    <!-- Hammer Head -->
+    <path d="M220 140 H292 V170 H220V140Z" fill="url(#cyber-grad)" filter="url(#glow)" />
+    <!-- Top part of anvil -->
+    <path d="M160 180 H352 L320 280 H192 L160 180Z" fill="url(#cyber-grad)" />
+    <!-- Neck -->
+    <rect x="236" y="280" width="40" height="40" fill="url(#cyber-grad)" />
+    <!-- Base -->
+    <path d="M180 320 H332 V360 H180V320Z" fill="url(#cyber-grad)" />
+  </g>
+
+  <!-- Inner Detail Lines -->
+  <path d="M256 80 L410 160 V352 L256 432 L102 352 V160 L256 80Z" 
+        stroke="url(#cyber-grad)" stroke-width="4" stroke-opacity="0.2" fill="none" />
+</svg>
